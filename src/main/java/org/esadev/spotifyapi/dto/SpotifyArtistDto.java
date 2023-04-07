@@ -1,2 +1,7 @@
-package org.esadev.spotifyapi.dto;public class SpotifyArtistDto {
+package org.esadev.spotifyapi.dto;
+
+import lombok.Data;
+
+@Data
+public class SpotifyArtistDto {
 }
