@@ -1,11 +1,6 @@
 package org.esadev.spotifyapi.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
@@ -19,8 +14,8 @@ import java.util.Objects;
 @Setter
 @ToString
 @RequiredArgsConstructor
-@Table(name = "spotify_artist")
-public class SpotifyArtist {
+@Table(name = "spotify_artist_unknown")
+public class SpotifyUnknownArtist {
     @Id
     @Column(name = "id", nullable = false)
     private String id;
@@ -31,7 +26,7 @@ public class SpotifyArtist {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || Hibernate.getClass(this) != Hibernate.getClass(o)) return false;
-        SpotifyArtist that = (SpotifyArtist) o;
+        SpotifyUnknownArtist that = (SpotifyUnknownArtist) o;
         return getId() != null && Objects.equals(getId(), that.getId());
     }
 

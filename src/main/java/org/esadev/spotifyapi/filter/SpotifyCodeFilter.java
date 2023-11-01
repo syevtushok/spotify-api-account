@@ -10,7 +10,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.util.Optional;
 
-import static org.esadev.spotifyapi.RequestUtils.extractCookieValue;
+import static org.esadev.spotifyapi.utils.RequestUtils.extractCookieValue;
 
 
 public class SpotifyCodeFilter extends OncePerRequestFilter {

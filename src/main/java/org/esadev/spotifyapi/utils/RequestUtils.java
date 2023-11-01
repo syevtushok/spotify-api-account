@@ -1,4 +1,4 @@
-package org.esadev.spotifyapi;
+package org.esadev.spotifyapi.utils;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
